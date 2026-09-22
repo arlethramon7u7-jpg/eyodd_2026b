@@ -1,3 +1,4 @@
+![alt text](image.png)
 # Estructura y Organizacion de Datos
 __Repositorio__ de la Materia de Estructura y Organización de Datos, 2026B
 
