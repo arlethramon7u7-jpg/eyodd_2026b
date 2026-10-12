@@ -9,7 +9,6 @@ crece el tamaño de la entrada
 Agrego las bigO indentificadas
 Teniendo en cuenta la Cota superior asintotica
 O(n) + O(4) = O(n+4) = O(n)
-
 """
 
 # Creando una lista de estudiantes
@@ -28,3 +27,4 @@ def check_student(input_student, student_list):
 
 # Probando algoritmo
 check_student("Walter", student_list_01)
+
