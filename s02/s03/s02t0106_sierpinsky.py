@@ -35,22 +35,20 @@ for row in range(1, rows): # Ponerle fin a la linea ->:
      left_upper_cell = 0
      right_upper_cell = 0
 
-     # Si la columna donde estamos 
-     # es mayor a cero es decir esta un elemento 
-     # despues 
-    if col > 0:
-        left_upper_cell = matrix[row-1][col-1]
+# Si la columna donde estamos 
+# es mayor a cero es decir esta un elemento 
+# despues del borde izquierdo 
+if col > 0:
+  left_upper_cell = matrix[row-1][col-1]
 
-    # Si la columna esta un elemento antes
-    # del borde derecho 
-    if col < columns - 1:
-      right_upper_cell = matrix[row-1][col+1]
+# Si la columna esta un elemento antes
+# del borde derechon
+if col < columns - 1:
+  right_upper_cell = matrix[row-1][col+1]
 
-    # Guardo el arreglo
-    if left_upper_cell != right_upper_cell:
-      matrix[row][col] = 1
-    else
-      matrix[row][col] = 0
+# Guardo el arreglo
+if left_upper_cell != right_upper_cell:
+  matrix[row][col] = 1
+else:
+  matrix[row][col] = 0
 
-print()
-print_matrix(matrix)
